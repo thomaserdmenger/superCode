@@ -74,6 +74,13 @@ p {
   color: var(--color-yellow-dark);
 }
 
+header,
+.discover,
+.different,
+footer {
+  padding: 0 7vw;
+}
+
 /* ! HEADER */
 
 /* ? Navbar */
@@ -84,7 +91,8 @@ header {
   background: url(./assets/images/coffee-background_1.png) no-repeat center;
   background-size: cover;
   color: var(--color-white);
-  padding: 1.3125rem 5vw 5.9375rem 5vw;
+  padding-top: 1.3125rem;
+  padding-bottom: 5.9375rem;
 }
 
 header nav {
@@ -149,7 +157,6 @@ header article .button {
 /* ! Discover Section */
 
 .discover {
-  padding: 0 5vw;
   display: flex;
   align-items: center;
   margin-top: 7.875rem;
@@ -182,7 +189,6 @@ header article .button {
 /* ! Different Section */
 
 .different {
-  padding: 0 5vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -222,14 +228,11 @@ header article .button {
 }
 
 .benefits {
-  /* # DELETE background-color */
-  background-color: lightblue;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: baseline;
   flex-basis: 17.5rem;
-  /* width: 17.5rem; */
   min-height: 300px;
   text-align: center;
   padding: 2rem;
@@ -257,4 +260,36 @@ header article .button {
   font-size: 1.75rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
+}
+
+/* ! FOOTER */
+
+footer {
+  display: flex;
+  background: url(./assets/images/coffee-background_2.png) no-repeat center;
+  background-size: cover;
+}
+
+footer div {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  align-items: flex-start;
+  justify-content: center;
+  margin-right: 10rem;
+  color: var(--color-white);
+}
+
+footer div h2 {
+  color: var(--color-white);
+}
+
+footer div p {
+  line-height: 2.125rem;
+  margin-right: 15rem;
+}
+
+footer img {
+  height: 467px;
+  margin: 3.375rem auto;
 }
