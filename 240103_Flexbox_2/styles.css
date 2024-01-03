@@ -1,0 +1,88 @@
+@font-face {
+  font-family: Clicker;
+  src: url(./assets/fonts/ClickerScript-Regular.ttf);
+}
+
+@font-face {
+  font-family: Playfair;
+  src: url(./assets/fonts/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+:root {
+  --color-white: #fff;
+  --color-yellow: #f9c06a;
+  --color-black: #1e1e1e;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  min-height: 100vh;
+  font-family: Playfair;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ! BASIC */
+
+h1,
+h2,
+h3 {
+  font-family: Clicker;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.button {
+  background-color: var(--color-yellow);
+  color: var(--color-black);
+  border-radius: 25px;
+  padding: 0.9375rem 1.6875rem;
+}
+
+/* ! HEADER */
+
+header {
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+  background: url(./assets/images/coffee-background_1.png) no-repeat center;
+  background-size: cover;
+  color: var(--color-white);
+  padding: 1.3125rem 5vw 5.9375rem 5vw;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav > a {
+  font-family: Clicker;
+  font-size: 2.1875rem;
+}
+
+header nav div {
+  display: flex;
+  align-items: center;
+  gap: 4vw;
+}
+
+header nav div a:nth-of-type(5) {
+  margin-left: 10vw;
+  text-decoration: underline;
+}
+
+header nav div a:nth-of-type(6) {
+}
