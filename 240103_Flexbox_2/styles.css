@@ -93,6 +93,22 @@ header {
   color: var(--color-white);
   padding-top: 1.3125rem;
   padding-bottom: 5.9375rem;
+  position: relative;
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.3),
+    rgba(255, 255, 255, 0.1)
+  );
 }
 
 header nav {
@@ -100,6 +116,7 @@ header nav {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 12rem;
+  z-index: 1;
 }
 
 header nav > a {
@@ -268,6 +285,17 @@ footer {
   display: flex;
   background: url(./assets/images/coffee-background_2.png) no-repeat center;
   background-size: cover;
+  position: relative;
+}
+
+footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: hsla(32, 83%, 21%, 0.8);
 }
 
 footer div {
@@ -278,6 +306,7 @@ footer div {
   justify-content: center;
   margin-right: 10rem;
   color: var(--color-white);
+  z-index: 1;
 }
 
 footer div h2 {
@@ -292,4 +321,5 @@ footer div p {
 footer img {
   height: 467px;
   margin: 3.375rem auto;
+  z-index: 1;
 }
