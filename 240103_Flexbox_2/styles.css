@@ -12,6 +12,8 @@
   --color-white: #fff;
   --color-yellow: #f9c06a;
   --color-black: #1e1e1e;
+  --color-brown: #603809;
+  --color-gray: #707070;
 }
 
 * {
@@ -32,7 +34,6 @@ img {
 /* ! BASIC */
 
 h1,
-h2,
 h3 {
   font-family: Clicker;
 }
@@ -44,8 +45,8 @@ a {
 }
 
 p {
-  font-size: 1.375rem;
-  font-weight: 500;
+  font-size: 1.25rem;
+  font-weight: 400;
 }
 
 .button {
@@ -81,7 +82,7 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 7.1875rem;
+  margin-bottom: 12rem;
 }
 
 header nav > a {
@@ -115,7 +116,61 @@ header article h3 {
   font-weight: 400;
 }
 
+header article p:first-of-type {
+  font-size: 1.375rem;
+  font-weight: 500;
+}
+
+header article p:last-of-type {
+  line-height: 2.125rem;
+}
+
 header article .button {
   margin-top: 1.25rem;
   font-weight: 700;
+}
+
+/* ! MAIN */
+
+/* ? Discover Section */
+
+.discover {
+  padding: 0 5vw;
+  display: flex;
+  align-items: center;
+  margin-top: 7.875rem;
+}
+
+.discover div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.8125rem;
+  margin-right: 8rem;
+}
+
+.discover div h2 {
+  color: var(--color-brown);
+  font-size: 3.375rem;
+  font-weight: 700;
+  /* margin-bottom: 1.8125rem; */
+}
+
+.discover div p {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--color-gray);
+  line-height: 34px;
+  /* margin-bottom: 1.8125rem; */
+}
+
+.discover img {
+  width: 40vw;
+}
+
+/* ? Blast Section */
+
+.blast img {
+  width: 25vw;
 }
