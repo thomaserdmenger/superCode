@@ -78,7 +78,7 @@ header,
 .discover,
 .different,
 footer {
-  padding: 0 7vw;
+  padding: 0 6vw;
 }
 
 /* ! HEADER */
@@ -138,6 +138,7 @@ header nav div a:nth-of-type(5) {
 header .button {
   font-size: 0.875rem;
   font-weight: 500;
+  z-index: 1;
 }
 
 /* ? Article */
@@ -153,15 +154,18 @@ header article {
 header article h3 {
   font-size: 13.75rem;
   font-weight: 400;
+  z-index: 1;
 }
 
 header article p:first-of-type {
   font-size: 1.375rem;
   font-weight: 500;
+  z-index: 1;
 }
 
 header article p:last-of-type {
   line-height: 2.125rem;
+  z-index: 1;
 }
 
 header article .button {
