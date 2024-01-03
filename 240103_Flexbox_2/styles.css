@@ -10,7 +10,9 @@
 
 :root {
   --color-white: #fff;
-  --color-yellow: #f9c06a;
+  --color-yellow-dark: hsla(36, 92%, 70%, 1);
+  --color-yellow-medium: #ffeed8;
+  --color-yellow-light: #fff9f1;
   --color-black: #1e1e1e;
   --color-brown: #603809;
   --color-gray: #707070;
@@ -38,6 +40,12 @@ h3 {
   font-family: Clicker;
 }
 
+h2 {
+  font-size: 3.375rem;
+  font-weight: 700;
+  color: var(--color-brown);
+}
+
 a {
   all: unset;
   cursor: pointer;
@@ -50,19 +58,20 @@ p {
 }
 
 .button {
-  background-color: var(--color-yellow);
-  border: 1px solid var(--color-yellow);
+  background-color: var(--color-yellow-dark);
+  border: 1px solid var(--color-yellow-dark);
   color: var(--color-black);
   border-radius: 25px;
   padding: 0.9375rem 1.6875rem;
   transition: 0.5s;
-  font-weight: 500;
+  font-weight: 700;
+  font-size: 1rem;
 }
 
 .button:hover {
   background-color: var(--color-black);
-  border-bottom: 1px solid var(--color-yellow);
-  color: var(--color-yellow);
+  border-bottom: 1px solid var(--color-yellow-dark);
+  color: var(--color-yellow-dark);
 }
 
 /* ! HEADER */
@@ -101,6 +110,11 @@ header nav div a:nth-of-type(5) {
   text-decoration: underline;
 }
 
+header .button {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
 /* ? Article */
 
 header article {
@@ -132,7 +146,7 @@ header article .button {
 
 /* ! MAIN */
 
-/* ? Discover Section */
+/* ! Discover Section */
 
 .discover {
   padding: 0 5vw;
@@ -150,27 +164,97 @@ header article .button {
   margin-right: 8rem;
 }
 
-.discover div h2 {
-  color: var(--color-brown);
-  font-size: 3.375rem;
-  font-weight: 700;
-  /* margin-bottom: 1.8125rem; */
-}
-
 .discover div p {
-  font-size: 20px;
-  font-weight: 400;
   color: var(--color-gray);
   line-height: 34px;
-  /* margin-bottom: 1.8125rem; */
 }
 
 .discover img {
   width: 40vw;
 }
 
-/* ? Blast Section */
+/* ! Blast Section */
 
 .blast img {
   width: 25vw;
+}
+
+/* ! Different Section */
+
+.different {
+  padding: 0 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3.125rem;
+}
+
+.different > div {
+  display: flex;
+  margin-bottom: 2rem;
+  gap: 1vw;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.different h2 {
+  margin-bottom: 1rem;
+}
+
+.different p {
+  color: var(--color-gray);
+}
+
+.different p:nth-of-type(1) {
+  margin-bottom: 2rem;
+}
+
+.different p:nth-of-type(2) {
+  margin-bottom: 0.5rem;
+}
+
+.different p:nth-of-type(3) {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: var(--color-brown);
+  margin-bottom: 1.5rem;
+}
+
+.benefits {
+  /* # DELETE background-color */
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: baseline;
+  flex-basis: 17.5rem;
+  /* width: 17.5rem; */
+  min-height: 300px;
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--color-yellow-light);
+  border: 1px solid var(--color-yellow-dark);
+  transition: 0.5s;
+}
+
+.benefits:hover {
+  transform: scale(1.05);
+}
+
+.benefits:first-of-type {
+  background-color: var(--color-yellow-medium);
+}
+
+.benefits img {
+  width: 88px;
+  height: 88px;
+  margin-bottom: 1.5625rem;
+}
+
+.benefits h4 {
+  color: var(--color-brown);
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
 }
