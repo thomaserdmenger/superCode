@@ -1,1 +1,1 @@
-![](./assets/images/screenshot.png)
+![](./assets/img/screenshot.png)
