@@ -5,17 +5,17 @@
   }
 
   25% {
-    transform: translateX(450px);
+    transform: translateX(45vw);
     background-color: yellow;
   }
 
   50% {
-    transform: translate(450px, 450px);
+    transform: translate(45vw, 45vw);
     background-color: green;
   }
 
   75% {
-    transform: translate(0, 450px);
+    transform: translate(0, 45vw);
     background-color: blue;
   }
 }
@@ -43,14 +43,14 @@ img {
 }
 
 .container {
-  height: 500px;
-  width: 500px;
+  width: 50vw;
+  height: 50vw;
   background-color: lightblue;
 }
 
 .ball {
-  width: 50px;
-  height: 50px;
+  height: 5vw;
+  width: 5vw;
   background-color: red;
   border-radius: 100%;
   animation: moveBall 5s ease-in-out infinite;
