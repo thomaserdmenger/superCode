@@ -50,4 +50,5 @@ img {
   align-items: center;
   justify-content: center;
   transition: 1s;
+  border-radius: 5px;
 }
