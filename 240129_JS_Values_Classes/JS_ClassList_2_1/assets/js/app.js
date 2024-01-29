@@ -15,8 +15,6 @@ const changeStyle = (e) => {
     heading.classList.add('heading');
   } else if (element.classList.contains('btn-reset')) {
     heading.classList.remove('heading');
-  } else {
-    return;
   }
 };
 
