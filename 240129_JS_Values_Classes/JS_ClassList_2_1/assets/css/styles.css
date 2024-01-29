@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  margin-block-end: 1rem;
+}
+
+li {
+  margin-block-end: 0.3rem;
+}
+
+.btn-container {
+  margin-block: 1rem;
+}
+
+button {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.heading {
+  color: lightblue;
+  font-size: 4rem;
+}
