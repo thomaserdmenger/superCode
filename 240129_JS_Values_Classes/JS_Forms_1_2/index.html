@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./assets/css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <form action="#">
+        <label for="year">Please enter your year of birth <span>*</span></label>
+        <input
+          type="number"
+          name="year"
+          id="year"
+          required
+          minlength="4"
+          maxlength="4" />
+        <input
+          type="submit"
+          value="Berechne dein Alter" />
+      </form>
+      <p class="message"></p>
+      <button>Refresh</button>
+    </main>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
