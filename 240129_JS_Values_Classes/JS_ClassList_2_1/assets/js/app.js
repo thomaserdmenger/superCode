@@ -1,7 +1,5 @@
-const btnStyle = document.querySelector('.btn-style');
-const btnReset = document.querySelector('.btn-reset');
-const heading = document.querySelector('h1');
 const wrapper = document.querySelector('.wrapper');
+const heading = document.querySelector('h1');
 
 const changeStyle = (e) => {
   const element = e.target;
