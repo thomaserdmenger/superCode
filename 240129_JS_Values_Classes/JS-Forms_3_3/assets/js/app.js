@@ -5,21 +5,15 @@ const redEl = document.querySelector('#red');
 const greenEl = document.querySelector('#green');
 const blueEl = document.querySelector('#blue');
 
-let redVal = document.querySelector('#red').value;
-let greenVal = document.querySelector('#green').value;
-let blueVal = document.querySelector('#blue').value;
+const changeBackground = () => {
+  const redVal = document.querySelector('#red').value;
+  const greenVal = document.querySelector('#green').value;
+  const blueVal = document.querySelector('#blue').value;
 
-redEl.addEventListener('change', (e) => {
-  redVal = e.target.value;
   background.style.backgroundColor = `rgb(${redVal}, ${greenVal}, ${blueVal})`;
-});
+  message.textContent = `rgb(${redVal}, ${greenVal}, ${blueVal})`;
+};
 
-greenEl.addEventListener('change', (e) => {
-  greenVal = e.target.value;
-  background.style.backgroundColor = `rgb(${redVal}, ${greenVal}, ${blueVal})`;
-});
-
-blueEl.addEventListener('change', (e) => {
-  blueVal = e.target.value;
-  background.style.backgroundColor = `rgb(${redVal}, ${greenVal}, ${blueVal})`;
-});
+redEl.addEventListener('change', changeBackground);
+greenEl.addEventListener('change', changeBackground);
+blueEl.addEventListener('change', changeBackground);

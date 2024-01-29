@@ -35,3 +35,7 @@ form div {
   justify-content: center;
   gap: 0.5rem;
 }
+
+.message {
+  margin-block: 2rem;
+}
