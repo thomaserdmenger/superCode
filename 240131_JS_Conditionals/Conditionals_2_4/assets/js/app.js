@@ -5,7 +5,7 @@ const add = (a, b) => {
     if (a !== b) {
       console.log(a + b);
     } else {
-      console.log(equal);
+      console.log((a + b) * equal);
     }
   } else {
     console.log(`Your input is not a number`);
