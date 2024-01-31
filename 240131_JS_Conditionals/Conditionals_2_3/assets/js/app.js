@@ -3,7 +3,7 @@ const compareNumbers = (input) => {
   const difference = input - number;
   const multiplicator = 2;
 
-  if (input > 27) {
+  if (input > number) {
     console.log(difference * multiplicator);
   }
 };
