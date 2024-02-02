@@ -20,19 +20,22 @@ const divideString = (event) => {
   const errorMessage = document.querySelector('.error');
   const index = userStringVal.indexOf(userDividerVal);
 
+  let partOne = '';
+  let partTwo = '';
+
   if (index === -1) {
     errorMessage.textContent = 'Bitte gib einen validen Trenner ein';
     resultPartOne.textContent = '';
     resultPartTwo.textContent = '';
   } else if (radioBtnOne.checked) {
-    const partOne = userStringVal.slice(0, index);
-    const partTwo = userStringVal.slice(index, userStringVal.length);
+    partOne = userStringVal.slice(0, index);
+    partTwo = userStringVal.slice(index, userStringVal.length);
     resultPartOne.textContent = partOne;
     resultPartTwo.textContent = partTwo;
     errorMessage.textContent = '';
   } else if (radioBtnTwo.checked) {
-    const partOne = userStringVal.slice(0, index + 1);
-    const partTwo = userStringVal.slice(index + 1, userStringVal.length);
+    partOne = userStringVal.slice(0, index + 1);
+    partTwo = userStringVal.slice(index + 1, userStringVal.length);
     resultPartOne.textContent = partOne;
     resultPartTwo.textContent = partTwo;
     errorMessage.textContent = '';
