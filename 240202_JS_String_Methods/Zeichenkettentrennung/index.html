@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./assets/css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Zeichen ketten trennungs maschine</h1>
+      <form>
+        <div>
+          <label for="user-input">Zu trennende Zeichen*</label>
+          <input
+            type="text"
+            name="user-input"
+            id="user-input"
+            placeholder="Gib deine Satz hier ein"
+            required />
+        </div>
+        <div>
+          <label for="user-divider">Trennen bei Zeichenkette*</label>
+          <input
+            type="text"
+            name="user-divider"
+            id="user-divider"
+            placeholder="Gib deinen Trenner hier ein"
+            required />
+        </div>
+        <div class="checkboxes">
+          <input
+            type="radio"
+            name="checkbox"
+            id="davor"
+            value="davor"
+            required />
+          <label for="davor">davor trennen</label>
+          <input
+            type="radio"
+            name="checkbox"
+            id="danach"
+            value="danach"
+            required />
+          <label for="danach">danach trennen</label>
+          <input
+            type="submit"
+            value="Hier klicken" />
+        </div>
+      </form>
+      <h2>Ausgabe</h2>
+      <p class="error"></p>
+      <h3>Vorderer Teil</h3>
+      <p class="davor"></p>
+      <h3>Hinterer Teil</h3>
+      <p class="danach"></p>
+    </div>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
