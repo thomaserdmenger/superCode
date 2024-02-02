@@ -23,10 +23,14 @@ const divideString = (event) => {
   let partOne = '';
   let partTwo = '';
 
-  if (index === -1) {
+  if (userStringVal.length === 0) {
+    errorMessage.textContent = 'Bitte gib einen Satz ein.';
+  } else if (index === -1 || userDividerVal.length === 0) {
     errorMessage.textContent = 'Bitte gib einen validen Trenner ein';
     resultPartOne.textContent = '';
     resultPartTwo.textContent = '';
+  } else if (!radioBtnOne.checked && !radioBtnTwo.checked) {
+    errorMessage.textContent = 'Bitte wähle einen Radio Button';
   } else if (radioBtnOne.checked) {
     partOne = userStringVal.slice(0, index);
     partTwo = userStringVal.slice(index, userStringVal.length);
