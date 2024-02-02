@@ -22,7 +22,6 @@ const divideString = (event) => {
 
   if (index === -1) {
     errorMessage.textContent = 'Bitte gib einen validen Trenner ein';
-    // errorMessage.style.color = 'red';
     resultPartOne.textContent = '';
     resultPartTwo.textContent = '';
   } else if (radioBtnOne.checked) {
