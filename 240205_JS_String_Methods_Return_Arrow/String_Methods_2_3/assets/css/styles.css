@@ -3,3 +3,13 @@
   padding: 0;
   margin: 0;
 }
+
+.highlight {
+  background-color: yellow;
+}
+
+form {
+  margin: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
