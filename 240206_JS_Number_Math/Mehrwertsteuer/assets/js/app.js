@@ -1,6 +1,26 @@
 const mwstOutput = document.querySelector('.mwst-output');
 const bruttoNettoOutput = document.querySelector('.brutto-netto-output');
 const form = document.querySelector('form');
+const radioAufschlagen = document.querySelector('#verfahren-aufschlagen');
+const radioAbziehen = document.querySelector('#verfahren-abziehen');
+const inputText = document.querySelector('.input-text');
+const outputText = document.querySelector('.output-text');
+
+const changeText = () => {
+  // Get Value Verfahren Aufschlagen und Abschlagen
+  const verfahrenVal = document.querySelector(
+    'input[name="verfahren"]:checked'
+  ).value;
+
+  // Change Text
+  if (verfahrenVal === 'aufschlagen') {
+    inputText.innerHTML = `<p>Nettobetrag (Preis ohne Mehrwertsteuer) in Euro<span class="red">*</span></p>`;
+    outputText.textContent = 'Bruttobetrag(Endbetrag)';
+  } else {
+    inputText.innerHTML = `<p>Bruttobetrag (Preis inkl. Mehrwertsteuer) in Euro<span class="red">*</span></p>`;
+    outputText.textContent = 'Nettobetrag';
+  }
+};
 
 const calculate = (event) => {
   event.preventDefault();
@@ -39,6 +59,9 @@ const calculate = (event) => {
   }
 };
 
+radioAufschlagen.addEventListener('change', changeText);
+radioAbziehen.addEventListener('change', changeText);
 form.addEventListener('submit', calculate);
 
-// ! Fehlermeldung, wenn keine Eingabe
+// # Fehlermeldung, wenn keine Eingabe
+// # Zahlen runden
