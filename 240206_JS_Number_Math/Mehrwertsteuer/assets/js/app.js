@@ -44,6 +44,8 @@ const calculate = (event) => {
   const fix19 = 1.19;
   const fix7 = 1.07;
 
+  if (userInputNum === 0) return;
+
   if (verfahrenVal === 'aufschlagen' && steuersatz === '19') {
     mwstOutput.textContent = `${(userInputNum * fix19 - userInputNum).toFixed(
       2
@@ -70,5 +72,3 @@ const calculate = (event) => {
 radioAufschlagen.addEventListener('change', changeText);
 radioAbziehen.addEventListener('change', changeText);
 form.addEventListener('submit', calculate);
-
-// # Fehlermeldung, wenn keine Eingabe
