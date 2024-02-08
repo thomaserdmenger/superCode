@@ -4,9 +4,13 @@ let checkNumber = [
 ];
 
 checkNumber.forEach((num) => {
-  if (num % 3 === 0) {
-    console.log(num + 100);
-  } else {
-    console.log(num);
-  }
+  // If/else Statement
+  // if (num % 3 === 0) {
+  //   console.log(num + 100);
+  // } else {
+  //   console.log(num);
+  // }
+
+  // Ternary Operator
+  console.log(num % 3 === 0 ? num + 100 : num);
 });
