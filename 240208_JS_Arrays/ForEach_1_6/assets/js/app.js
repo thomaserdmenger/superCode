@@ -6,13 +6,25 @@ let album = [
   'DOGATBEACH.jpg',
 ];
 
+// map() and replace()
+// const result = album.map((title) => {
+//   if (title.includes('.jpg')) {
+//     return title.replace('.jpg', '').toLowerCase();
+//   } else if (title.includes('.GIF')) {
+//     return title.replace('.GIF', '').toLowerCase();
+//   } else {
+//     return (title = 'invalid');
+//   }
+// });
+
+// map() and slice()
 const result = album.map((title) => {
-  if (title.includes('.jpg')) {
-    return title.replace('.jpg', '').toLowerCase();
-  } else if (title.includes('.GIF')) {
-    return title.replace('.GIF', '').toLowerCase();
+  let newTitle = title.toLowerCase();
+
+  if (newTitle.includes('.gif') || newTitle.includes('.jpg')) {
+    return newTitle.slice(0, newTitle.length - 4);
   } else {
-    return (title = 'invalid');
+    return (newTitle = 'invalid');
   }
 });
 
