@@ -29,10 +29,8 @@ const loopFns = (event) => {
   }
 
   const message = `L${charO}p`;
-  console.log(charO);
 
   renderContent(message);
-  errorMessage(message);
 };
 
 const renderContent = (message) => {
