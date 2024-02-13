@@ -43,4 +43,4 @@ const errorMessage = (userInput) => {
   }
 };
 
-form.addEventListener('click', loopFns);
+form.addEventListener('submit', loopFns);
