@@ -31,7 +31,7 @@ const randomImage = () => {
   // Zuerst alle vorhandenen Bilder entfernen
   container.querySelectorAll('img').forEach((img) => img.remove());
 
-  const randomNum = Math.floor(Math.random() * 26);
+  const randomNum = Math.floor(Math.random() * data.length - 1);
   const div = document.createElement('div');
   const image = document.createElement('img');
   image.setAttribute('src', data[randomNum].download_url);
