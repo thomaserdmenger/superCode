@@ -4,7 +4,8 @@ import singers from './data.js';
 // Get DOM Elements
 const tableContainer = document.querySelector('#table-container');
 const form = document.querySelector('form');
-const button = document.querySelector('button');
+const searchBtn = document.querySelector('button');
+const resetBtn = document.querySelector('input[type="button"]');
 
 // Focus User Input on Page Load
 document.querySelector('#searchInput').focus();
@@ -51,8 +52,8 @@ const filterData = (e) => {
   // Error Handling
   if (userInput.length <= 0) {
     document.querySelector('#searchInput').placeholder = 'Enter a valid name';
-    button.classList.add('red');
-    button.textContent = 'Enter valid data';
+    searchBtn.classList.add('red');
+    searchBtn.textContent = 'Enter valid data';
     return;
   }
 
@@ -68,9 +69,10 @@ const filterData = (e) => {
   document.querySelector('#searchInput').value = '';
 
   // Style Default Button
-  button.classList.remove('red');
-  button.textContent = 'Search';
+  searchBtn.classList.remove('red');
+  searchBtn.textContent = 'Search';
 };
 
 // Event Listener
 form.addEventListener('submit', filterData);
+resetBtn.addEventListener('click', () => renderTable(singers));
