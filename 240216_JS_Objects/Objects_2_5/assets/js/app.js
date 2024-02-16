@@ -15,6 +15,14 @@ const renderTable = (input) => {
   // Empty Table
   document.querySelector('#table-container').innerHTML = '';
 
+  // Error Handling
+  if (input.length === 0) {
+    document.querySelector(
+      '#table-container'
+    ).innerHTML = `<p class="redTwo">No Result for your search. Please enter some other name</p>`;
+    return;
+  }
+
   // Create Table with Content
   tableContainer.innerHTML += `
   <table>
