@@ -2,7 +2,7 @@
 const gridContainer = document.querySelector('.grid')
 
 // Fetch Data from API
-fetch('https://picsum.photos/v2/list')
+fetch('https://picsum.photos/v2/list?page=2&limit=9')
   .then((res) => res.json())
   .then((data) => renderContent(data))
   .catch((err) => console.log(err))
