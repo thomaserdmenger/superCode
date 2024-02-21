@@ -5,6 +5,7 @@ const gridContainer = document.querySelector('.grid')
 fetch('https://picsum.photos/v2/list')
   .then((res) => res.json())
   .then((data) => renderContent(data))
+  .catch((err) => console.log(err))
 
 // Render Content
 const renderContent = (data) => {
