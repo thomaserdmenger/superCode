@@ -1,0 +1,16 @@
+.counter {
+  border: 1px solid black;
+  padding: 2rem 4rem;
+}
+
+.counter__top-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-block-end: 1rem;
+}
+
+.counter__bottom-container {
+  display: flex;
+  justify-content: center;
+}
