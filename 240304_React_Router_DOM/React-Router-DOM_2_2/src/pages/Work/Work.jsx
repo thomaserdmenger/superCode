@@ -2,7 +2,7 @@ import blogData from '../../assets/data/data.js'
 
 const Work = () => {
   return (
-    <main>
+    <main className='blogSingleItems'>
       <img
         src={blogData[2].img_url}
         alt=''
